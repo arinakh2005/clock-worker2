@@ -1,8 +1,8 @@
 const worker = new Worker('worker.js');
 
-const startTimerLabelElem = document.querySelector("#startTimerLabel");
-const secForTimerElem = document.querySelector("#secForTimer");
-let secForTimerValue = Number(secForTimerElem.value);
+const startTimerLabelElem: HTMLElement = document.querySelector("#startTimerLabel");
+const secForTimerElem: HTMLInputElement = document.querySelector("#secForTimer");
+let secForTimerValue: number = Number(secForTimerElem.value);
 
 startTimerLabelElem.addEventListener("click", (event) => {
     secForTimerValue = Number(secForTimerElem.value);
